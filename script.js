@@ -62,3 +62,23 @@ function generateSentence() {
 
 //Bind a click event to the button: run the generateSentence function when the button is clicked.
 document.getElementById("generate-button").addEventListener("click", generateSentence);
+
+
+//Task prompt library categorized by type
+const taskPrompts = {
+	visual: [
+
+	],
+	sensory: [
+
+	],
+	writing: [
+
+	],
+	conceptual: [
+
+	],
+	action: [
+
+	]
+}
