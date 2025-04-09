@@ -87,4 +87,16 @@ const taskPrompts = {
 		"What kind of world could exist where this sentence is completely normal?",
 		"Turn this sentence into a museum exhibit title. What does the exhibit show?"
 	],
+};
+
+//Generate a random task based on selected task type
+function generateTaskPrompt() {
+	const type = document.getElementById("task-container").value;
+	const prompts = taskPrompts[type];
+
+	const prompt = random(prompts);
+	document.getElementById("task-output").textContent = prompt;
 }
+
+//bind task generation button
+document.getElementById("generate-task-button").addEventListener("click",generateTaskPrompt);
