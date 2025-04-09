@@ -8,19 +8,30 @@
 	</head>
 
 	<body>
+		<header>
+			<h1>Inspiration Perpetual Motion Machine</h1>
+		</header>
+
+		<!--function 1-->
 		<select id="style-container">
 			<option disabled selected>--Select Style--</option>
 			<option value="surreal">Surrealism</option>
 			<option value="nature">Nature</option>
 		</select>
-
 		<button id="generate-button">Generate</button>
-		<!--Sentence display area.-->
 		<div id="output"></div>
 
-		<!-- <button id="generate-story-button">Generate a story</button> -->
-		<!--Story display area.-->
-		<!-- <div id="story-output"></div> -->
+		<!--function 2-->
+		<select id="task-container">
+			<option disabled selected>--Select Task Type--</option>
+			<option value="visual">Visual Thinking</option>
+			<option value="sensory">Sensory</option>
+			<option value="writing">Writing</option>
+			<option value="conceptual">Conceptual</option>
+			<option value="action">Action-based</option>
+		</select>
+		<button id="generate-task-button">Generate</button>
+		<div id="task-output"></div>
 
 
 		<footer>
