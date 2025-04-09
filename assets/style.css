@@ -22,7 +22,6 @@ select, button{
 .hint-text {
 	font-size: 14px;
 	color: gray;
-	margin-left: 12px;
 }
 
 .hidden {
