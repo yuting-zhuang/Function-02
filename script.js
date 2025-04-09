@@ -94,6 +94,11 @@ function generateTaskPrompt() {
 	const type = document.getElementById("task-container").value;
 	const prompts = taskPrompts[type];
 
+	if (!prompts) {
+		alert("Please select a task type.");
+		return;
+	}
+
 	const prompt = random(prompts);
 	document.getElementById("task-output").textContent = prompt;
 }
