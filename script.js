@@ -53,6 +53,11 @@ function generateSentence() {
 	//Get the vocabulary object (subject, verb, adjective, object) from the corresponding style.
 	const bank = wordBank[style];
 
+	if (!bank) {
+		alert("Please select a style first.");
+		return;
+	}
+
 	//Combine the sentence according to the structure.
 	const sentence = `The ${random(bank.subjects)} ${random(bank.verbs)} the ${random(bank.adjectives)} ${random(bank.objects)}.`;
 
