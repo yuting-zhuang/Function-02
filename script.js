@@ -67,18 +67,24 @@ document.getElementById("generate-button").addEventListener("click", generateSen
 //Task prompt library categorized by type
 const taskPrompts = {
 	visual: [
-
+		"Design an album cover based on this sentence.",
+		"Choose 2 colors that visually match this sentence.",
+		"Turn this sentence into a collage.",
+		"Create a 5-minute drawing inspired by this sentence."
 	],
 	sensory: [
-
+		"If this sentence were a sound, what would it be?",
+		"Whisper this sentence to yourself. How does it feel?",
+		"Use this sentence to create a short soundscape.",
+		"What emotion is hidden beneath these words?"
 	],
 	writing: [
-
+		"Use this sentence as the first line of a poem.",
+		"Translate this sentence into emoji."
 	],
 	conceptual: [
-
+		"What question does this sentence try to answer?",
+		"What kind of world could exist where this sentence is completely normal?",
+		"Turn this sentence into a museum exhibit title. What does the exhibit show?"
 	],
-	action: [
-
-	]
 }
