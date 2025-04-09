@@ -4,8 +4,14 @@ body{
 	background-color: antiquewhite;
 }
 
+h1{
+	font-size: 2rem;
+	padding-bottom: 5rem;
+}
+
 footer{
 	padding: 2rem;
+	margin-top: 12rem;
 	text-align: center;
 }
 
