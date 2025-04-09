@@ -21,15 +21,12 @@ select, button{
 
 .hint-text {
 	font-size: 14px;
-	color: blueviolet;
+	color: gray;
 	margin-left: 12px;
-	opacity: 1;
-	transition: opacity 0.3s ease;
 }
 
 .hidden {
 	display: none;
-	opacity: 0;
 }
 
 #output{

@@ -68,9 +68,6 @@ function generateSentence() {
 	const hint = document.getElementById("sentence-hint");
 	if (hint.classList.contains("hidden")) {
 		hint.classList.remove("hidden");
-		setTimeout(() => {
-			hint.style.opacity = "1";
-		}, 10);
 	}
 }
 
