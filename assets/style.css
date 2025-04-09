@@ -19,9 +19,23 @@ select, button{
 	cursor: pointer;
 }
 
+.hint-text {
+	font-size: 14px;
+	color: blueviolet;
+	margin-left: 12px;
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+
+.hidden {
+	display: none;
+	opacity: 0;
+}
+
 #output{
 	margin-top: 40px;
 	font-size: 20px;
 	font-style: italic;
 	color: brown;
 }
+
