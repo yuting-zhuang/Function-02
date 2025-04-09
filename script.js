@@ -112,6 +112,12 @@ function generateTaskPrompt() {
 
 	const prompt = random(prompts);
 	document.getElementById("task-output").textContent = prompt;
+
+	//show hint after first click
+	const taskHint = document.getElementById("task-hint");
+	if (!taskHint.classList.contains("show")) {
+		taskHint.classList.add("show");
+	}
 }
 
 //bind task generation button
