@@ -62,7 +62,16 @@ function generateSentence() {
 	const sentence = `The ${random(bank.subjects)} ${random(bank.verbs)} the ${random(bank.adjectives)} ${random(bank.objects)}.`;
 
 	//Display the generated sentence on the page (insert it into the element with the ID "output").
-	document.getElementById("output").textContent = sentence
+	document.getElementById("output").textContent = sentence;
+
+	//show hint after first click
+	const hint = document.getElementById("sentence-hint");
+	if (hint.classList.contains("hidden")) {
+		hint.classList.remove("hidden");
+		setTimeout(() => {
+			hint.style.opacity = "1";
+		}, 10);
+	}
 }
 
 //Bind a click event to the button: run the generateSentence function when the button is clicked.
