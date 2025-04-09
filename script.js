@@ -66,8 +66,8 @@ function generateSentence() {
 
 	//show hint after first click
 	const hint = document.getElementById("sentence-hint");
-	if (hint.classList.contains("hidden")) {
-		hint.classList.remove("hidden");
+	if (!hint.classList.contains("show")) {
+		hint.classList.add("show");
 	}
 }
 

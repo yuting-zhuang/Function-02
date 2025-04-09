@@ -19,13 +19,24 @@ select, button{
 	cursor: pointer;
 }
 
+.button-container{
+	position: relative;
+	display: inline-block;
+}
+
 .hint-text {
 	font-size: 14px;
 	color: gray;
+	position: absolute;
+	top: 50%;
+	left: 110%;
+	transform: translateY(-50%);
+	white-space: nowrap;
+	visibility: hidden;
 }
 
-.hidden {
-	display: none;
+.hint-text.show{
+	visibility: visible;
 }
 
 #output{
