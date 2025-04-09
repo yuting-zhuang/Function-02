@@ -59,7 +59,7 @@ function generateSentence() {
 	}
 
 	//Combine the sentence according to the structure.
-	const sentence = `The ${random(bank.subjects)} ${random(bank.verbs)} the ${random(bank.adjectives)} ${random(bank.objects)}.`;
+	const sentence = `"The ${random(bank.subjects)} ${random(bank.verbs)} the ${random(bank.adjectives)} ${random(bank.objects)}."`;
 
 	//Display the generated sentence on the page (insert it into the element with the ID "output").
 	document.getElementById("output").textContent = sentence;
