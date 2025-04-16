@@ -53,10 +53,8 @@ button{
 }
 
 /*added text box style*/
-#output,
+/* #output,
 #task-output{
-	/* margin-top: 40px; */
-	/* margin-bottom: 40px; */
 	font-size: 20px;
 	font-style: italic;
 	color: brown;
@@ -66,7 +64,7 @@ button{
 	padding: 20px;
 	margin: 40px auto;
 	max-width: 600px;
-}
+} */
 
 /*flip card*/
 .card{
