@@ -64,11 +64,6 @@ function generateSentence() {
 	//Display the generated sentence on the page (insert it into the element with the ID "output").
 	document.getElementById("output").textContent = sentence;
 
-	//show hint after first click
-	const hint = document.getElementById("sentence-hint");
-	if (!hint.classList.contains("show")) {
-		hint.classList.add("show");
-	}
 }
 
 //Bind a click event to the button: run the generateSentence function when the button is clicked.
@@ -113,11 +108,6 @@ function generateTaskPrompt() {
 	const prompt = random(prompts);
 	document.getElementById("task-output").textContent = prompt;
 
-	//show hint after first click
-	const taskHint = document.getElementById("task-hint");
-	if (!taskHint.classList.contains("show")) {
-		taskHint.classList.add("show");
-	}
 }
 
 //bind task generation button
