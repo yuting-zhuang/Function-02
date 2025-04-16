@@ -65,8 +65,8 @@ function generateSentence() {
 	document.getElementById("output").textContent = sentence;
 
 	//Iterate button text after first click
-	const sentenceButton = document.getElementById("generate-button");
-	sentenceButton.textContent = "Re-Generate";
+	// const sentenceButton = document.getElementById("generate-button");
+	// sentenceButton.textContent = "Re-Generate";
 
 }
 
@@ -112,8 +112,8 @@ function generateTaskPrompt() {
 	const prompt = random(prompts);
 	document.getElementById("task-output").textContent = prompt;
 
-	const taskButton = document.getElementById("generate-task-button");
-	taskButton.textContent = "Re-Generate";
+	// const taskButton = document.getElementById("generate-task-button");
+	// taskButton.textContent = "Re-Generate";
 }
 
 //bind task generation button
