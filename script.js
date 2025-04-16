@@ -118,3 +118,8 @@ function generateTaskPrompt() {
 
 //bind task generation button
 document.getElementById("generate-task-button").addEventListener("click",generateTaskPrompt);
+
+//flip on mobile (on tap)
+document.getElementById("flip-card").addEventListener("click", function() {
+	this.classList.toggle("is-flipped");
+})
