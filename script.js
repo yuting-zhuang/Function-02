@@ -118,7 +118,7 @@ function generateTaskPrompt() {
 	const card = document.getElementById("flip-card");
 	card.classList.add("is-flipped");
 	setTimeout(() => {
-		card,classList.remove("is-flipped");
+		card.classList.remove("is-flipped");
 	}, 500);
 }
 
