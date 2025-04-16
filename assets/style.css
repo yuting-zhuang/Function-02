@@ -15,7 +15,22 @@ footer{
 	text-align: center;
 }
 
-select, button{
+select{
+	padding: 8px 40px 8px 16px;
+	margin: 8px;
+	font-size: 16px;
+	background-color: lightgray;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+
+	background-image: url('../image/down-arrow.png');
+	background-repeat: no-repeat;
+	background-position: right 12px center;
+	background-size: 14px;
+}
+
+button{
 	padding: 8px 16px;
 	margin: 8px;
 	font-size: 16px;
