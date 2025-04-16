@@ -64,6 +64,10 @@ function generateSentence() {
 	//Display the generated sentence on the page (insert it into the element with the ID "output").
 	document.getElementById("output").textContent = sentence;
 
+	//Iterate button text after first click
+	const sentenceButton = document.getElementById("generate-button");
+	sentenceButton.textContent = "Re-Generate";
+
 }
 
 //Bind a click event to the button: run the generateSentence function when the button is clicked.
@@ -108,6 +112,8 @@ function generateTaskPrompt() {
 	const prompt = random(prompts);
 	document.getElementById("task-output").textContent = prompt;
 
+	const taskButton = document.getElementById("generate-task-button");
+	taskButton.textContent = "Re-Generate";
 }
 
 //bind task generation button
