@@ -114,6 +114,12 @@ function generateTaskPrompt() {
 
 	// const taskButton = document.getElementById("generate-task-button");
 	// taskButton.textContent = "Re-Generate";
+
+	const card = document.getElementById("flip-card");
+	card.classList.add("is-flipped");
+	setTimeout(() => {
+		card,classList.remove("is-flipped");
+	}, 500);
 }
 
 //bind task generation button

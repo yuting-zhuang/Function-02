@@ -107,7 +107,7 @@ button:hover{
 }
 
 /*mobile(on tap)*/
-.card.is-flipped .card-inner{
+.card.is-flipped .card-container{
 	transform: rotateY(180deg);
 }
 
