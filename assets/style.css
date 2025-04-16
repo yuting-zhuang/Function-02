@@ -2,11 +2,15 @@ body{
 	text-align: center;
 	padding-top: 100px;
 	background-color: antiquewhite;
+
+	color: #422f21;
 }
 
 h1{
 	font-size: 2rem;
-	padding-bottom: 5rem;
+	/* padding-bottom: 5rem; */
+
+	margin-bottom: 3rem;
 }
 
 footer{
@@ -19,7 +23,7 @@ select{
 	padding: 8px 40px 8px 16px;
 	margin: 8px;
 	font-size: 16px;
-	background-color: lightgray;
+	background-color: #ddd3c1;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
@@ -34,24 +38,33 @@ button{
 	padding: 8px 16px;
 	margin: 8px;
 	font-size: 16px;
-	background-color: lightgray;
+	background-color: #422f21;
+	color: antiquewhite;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
 }
 
 .button-container{
-	position: relative;
+	/* position: relative; */
 	display: inline-block;
+
+	margin-top: 10px;
 }
 
-
+/*added text box style*/
 #output,
 #task-output{
-	margin-top: 40px;
-	margin-bottom: 40px;
+	/* margin-top: 40px; */
+	/* margin-bottom: 40px; */
 	font-size: 20px;
 	font-style: italic;
 	color: brown;
+
+	background-color: white;
+	border-left: 4px solid brown;
+	padding: 20px;
+	margin: 40px auto;
+	max-width: 600px;
 }
 
