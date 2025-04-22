@@ -1,4 +1,4 @@
-//Define an object that contains the vocabulary lists for all styles.
+//Vocabulary lists by style.
 const wordBank = {
 	surreal:{
 		subjects:[
@@ -38,43 +38,7 @@ const wordBank = {
 };
 
 
-//Define a utility function to randomly select an element from an array.
-function random(arr) {
-	return arr[Math.floor(Math.random() * arr.length)];
-}
-
-
-//Generating sentences.
-function generateSentence() {
-
-	//Get the style currently selected by the user (retrieve the selected value from the dropdown menu).
-	const style = document.getElementById("style-container").value;
-
-	//Get the vocabulary object (subject, verb, adjective, object) from the corresponding style.
-	const bank = wordBank[style];
-
-	if (!bank) {
-		alert("Please select a style first.");
-		return;
-	}
-
-	//Combine the sentence according to the structure.
-	const sentence = `"The ${random(bank.subjects)} ${random(bank.verbs)} the ${random(bank.adjectives)} ${random(bank.objects)}."`;
-
-	//Display the generated sentence on the page (insert it into the element with the ID "output").
-	document.getElementById("output").textContent = sentence;
-
-	//Iterate button text after first click
-	// const sentenceButton = document.getElementById("generate-button");
-	// sentenceButton.textContent = "Re-Generate";
-
-}
-
-//Bind a click event to the button: run the generateSentence function when the button is clicked.
-document.getElementById("generate-button").addEventListener("click", generateSentence);
-
-
-//Task prompt library categorized by type
+//Task type library categorized by type
 const taskPrompts = {
 	visual: [
 		"Design an album cover based on this sentence.","Choose 2 colors that visually match this sentence.","Sketch a 10-minute drawing of the sentence.","Create a collage that interprets the sentence visually.","Use only geometric shapes to express the sentence.","Create a moodboard using textures related to the sentence.","Design a movie poster inspired by the sentence.","Turn the sentence into a logo or icon.","Recreate the sentence in 3D using found objects.","Make a digital artwork based on a literal interpretation.","Redraw the sentence in the style of your favorite artist.","Use paper cutouts to visualize the sentence.","Turn the sentence into a pattern or textile design.","Make a comic strip that ends with this sentence.","Draw a map of a place where the sentence would be true.","Illustrate the sentence using only lines and shadows.","Design a book cover for a story based on the sentence.","Create a symmetrical visual based on the sentence.","Interpret the sentence using photography.","Use food or objects to recreate the sentence and photograph it.","Draw two interpretations: literal and symbolic.","Animate the sentence in 3-5 frames.","Create a character that embodies the sentence.","Use collage and typography to recreate the sentence visually.","Paint the atmosphere of the sentence.","Create a tarot-style card that represents the sentence.","Design a flag based on the emotion of the sentence.","Build a shadow box scene inspired by the sentence.","Illustrate the sentence as a cover for a zine.","Use fabric or texture scans to reinterpret the sentence.","Create a pixel-art version of the sentence.","Turn the sentence into a surreal landscape.","Visualize it as a scientific diagram.","Design packaging for a fictional product inspired by the sentence.","Use mirrors or transparency in your design.","Represent the sentence with only circles.","Create an animation loop that visualizes the mood.","Use AI image generators to explore the sentence visually.","Design an AR filter or digital mask based on the sentence.","Visualize the sentence using only black and white."
@@ -90,22 +54,44 @@ const taskPrompts = {
 	],
 };
 
-//Generate a random task based on selected task type
-function generateTaskPrompt() {
+
+//Define a utility function to randomly select an element from an array.
+function random(arr) {
+	return arr[Math.floor(Math.random() * arr.length)];
+}
+
+
+//Generate a random sentence based on selected style + a random task based on selected task type
+function generateAll() {
+
+	//Get the style currently selected by the user (retrieve the selected value from the dropdown menu).
+	const style = document.getElementById("style-container").value;
 	const type = document.getElementById("task-container").value;
+
+	//Get the vocabulary object (subject, verb, adjective, object) from the corresponding style.
+	const bank = wordBank[style];
 	const prompts = taskPrompts[type];
 
-	if (!prompts) {
-		alert("Please select a task type.");
+	if (!bank || !prompts) {
+		alert("Please select a sentence style and task type.");
 		return;
 	}
 
-	const prompt = random(prompts);
-	document.getElementById("task-output").textContent = prompt;
+	//Combine the sentence according to the structure.
+	const sentence = `"The ${random(bank.subjects)} ${random(bank.verbs)} the ${random(bank.adjectives)} ${random(bank.objects)}."`;
 
-	// const taskButton = document.getElementById("generate-task-button");
-	// taskButton.textContent = "Re-Generate";
+	//Display the generated sentence on the page (insert it into the element with the ID "output").
+	document.getElementById("output").textContent = sentence;
+	
+	//same with task generator
+	const task = random(prompts);
+	document.getElementById("task-output").textContent = task;
 
+	//Iterate button text after first click
+	// const sentenceButton = document.getElementById("generate-button");
+	// sentenceButton.textContent = "Re-Generate";
+
+	//auto-flip
 	const card = document.getElementById("flip-card");
 	card.classList.add("is-flipped");
 	setTimeout(() => {
@@ -113,8 +99,8 @@ function generateTaskPrompt() {
 	}, 500);
 }
 
-//bind task generation button
-document.getElementById("generate-task-button").addEventListener("click",generateTaskPrompt);
+//Bind a click event to the button: run the generateSentence function when the button is clicked.
+document.getElementById("generate-button").addEventListener("click", generateAll);
 
 //flip on mobile (on tap)
 document.getElementById("flip-card").addEventListener("click", function() {
