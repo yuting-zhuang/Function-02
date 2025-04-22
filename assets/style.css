@@ -19,11 +19,11 @@ body{
 }
 
 .background.nature-bg{
-	background-image: url('../image/nature-real.jpg');
+	background-image: url('../image/nature-gradient.jpg');
 }
 
 .background.surreal-bg{
-	background-image: url('../image/surrealism-real.jpg');
+	background-image: url('../image/surrealism-gradient.jpg');
 }
 
 h1{
