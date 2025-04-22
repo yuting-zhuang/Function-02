@@ -3,18 +3,27 @@ body{
 	padding-top: 100px;
 	background-color: antiquewhite;
 	color: #422f21;
-
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	transition: background-image 0.5s ease;
 }
 
-body.nature-bg{
+.background{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	filter: blur(10px);
+	z-index: -1;
+	/* transition: background-image 0.5s ease; */
+}
+
+.background.nature-bg{
 	background-image: url('../image/nature-real.jpg');
 }
 
-body.surreal-bg{
+.background.surreal-bg{
 	background-image: url('../image/surrealism-real.jpg');
 }
 
