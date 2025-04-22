@@ -6,6 +6,14 @@ body{
 	color: #422f21;
 }
 
+body.nature-bg{
+	background-image: url('../image/nature-real.jpg');
+}
+
+body.surreal-bg{
+	background-image: url('../image/surrealism-real.jpg');
+}
+
 h1{
 	font-size: 2rem;
 	/* padding-bottom: 5rem; */

@@ -60,6 +60,19 @@ function random(arr) {
 	return arr[Math.floor(Math.random() * arr.length)];
 }
 
+//background image
+function updateBackgroundByStyle(style) {
+	const body = document.body;
+	body.classList.remove("nature-bg","surreal-bg"); //remove all the style first
+	
+	if (style === "nature") {                        //then add on
+		body.classList.add("nature-bg");
+	} 
+	
+	else if (style === "surreal") {
+		body.classList.add("sureal-bg");
+	}
+}
 
 //Generate a random sentence based on selected style + a random task based on selected task type
 function generateAll() {
@@ -76,6 +89,9 @@ function generateAll() {
 		alert("Please select a sentence style and task type.");
 		return;
 	}
+
+	//background image
+	updateBackgroundByStyle(style);
 
 	//Combine the sentence according to the structure.
 	const sentence = `"The ${random(bank.subjects)} ${random(bank.verbs)} the ${random(bank.adjectives)} ${random(bank.objects)}."`;
