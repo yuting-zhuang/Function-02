@@ -65,12 +65,10 @@ function updateBackgroundByStyle(style) {
 	const body = document.body;
 	body.classList.remove("nature-bg","surreal-bg"); //remove all the style first
 	
-	if (style === "nature") {                        //then add on
+	if (style === "nature") { //then add on
 		body.classList.add("nature-bg");
-	} 
-	
-	else if (style === "surreal") {
-		body.classList.add("sureal-bg");
+	} else if (style === "surreal") {
+		body.classList.add("surreal-bg");
 	}
 }
 
