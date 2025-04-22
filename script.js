@@ -63,7 +63,6 @@ function random(arr) {
 //background image
 function updateBackgroundByStyle(style) {
 	const background = document.querySelector(".background");
-	
 	background.classList.remove("nature-bg","surreal-bg"); //remove all the style first
 	
 	if (style === "nature") { //then add on
@@ -116,6 +115,12 @@ function generateAll() {
 
 //Bind a click event to the button: run the generateSentence function when the button is clicked.
 document.getElementById("generate-button").addEventListener("click", generateAll);
+
+//background image change immediatly after choose style
+document.getElementById("style-container").addEventListener("change", function() {
+	const selectedStyle = this.value;
+	updateBackgroundByStyle(selectedStyle);
+})
 
 //flip on mobile (on tap)
 document.getElementById("flip-card").addEventListener("click", function() {
