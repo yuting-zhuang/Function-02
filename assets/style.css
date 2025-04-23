@@ -58,7 +58,7 @@ footer{
 }
 
 select{
-	padding: 8px 40px 8px 16px;
+	padding: 8px 40px 8px 40px;
 	margin: 8px;
 	font-size: 16px;
 	background-color: rgba(50, 31, 26, 0.4);
@@ -67,17 +67,23 @@ select{
 	border-radius: 4px;
 	cursor: pointer;
 
-	background-image: url('../image/down-arrow.png');
 	background-repeat: no-repeat;
-	background-position: right 12px center;
-	background-size: 14px;
+	background-position: right 12px center, left 12px center;
+	background-size: 10px, 10px;
 
 	backdrop-filter: blur(6px);
-
 }
 
 select:hover{
 	background-color: rgba(93, 79, 75, 0.6);
+}
+
+#style-container{
+	background-image: url('../image/down-arrow.png'), url('../image/circle.png');
+}
+
+#task-container{
+	background-image: url('../image/down-arrow.png'), url('../image/Triangle.png')
 }
 
 button{
