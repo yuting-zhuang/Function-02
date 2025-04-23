@@ -1,6 +1,6 @@
 body{
 	text-align: center;
-	padding-top: 7rem;
+	/* padding-top: 7rem; */
 	background-color: antiquewhite;
 	color: #422f21;
 }
@@ -51,9 +51,13 @@ h3{
 }
 
 footer{
-	padding: 2rem;
-	margin-top: 5rem;
+	padding: 0rem;
+	margin-top: 1rem;
 	text-align: center;
+
+	font-size: 0.75rem;
+	font-family: "lorimer-no-2", sans-serif;
+	font-weight: 400;
 }
 
 select{
@@ -217,6 +221,28 @@ button:hover{
 
 }
 
+.intro{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 2.5rem;
+	font-family: "lorimer-no-2", sans-serif;
+	font-weight: 500;
+	padding: 0 2rem;
+}
+
+.a-link{
+	text-decoration: underline;
+	cursor: pointer;
+	transition: color 0.5s ease;
+}
+
+.a-link:hover{
+	color: #ae8f76;
+}
+
 @media (min-width: 700px) {
 	h1{
 		font-size: 2.5rem;
@@ -278,4 +304,20 @@ button:hover{
 		/* width: 40rem; */
 	}
 
+	.intro{
+		height: 100vh;
+
+		font-size: 3rem;
+
+		font-weight: 500;
+		padding: 0 15rem;
+	}
+
+	footer{
+		padding: 1rem;
+		margin-top: 3rem;
+		text-align: center;
+
+		font-size: 1rem;
+	}
 }
