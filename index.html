@@ -10,53 +10,53 @@
 	</head>
 
 	<body>
-		<header>
-			<h1>Inspiration Card</h1>
-			<!-- <h2>Out of ideas when creating artwork? Try me!</h2> -->
-		</header>
-		
+
 		<div class="background"></div>
 
-		<div class="all-buttons">
-			<!--function 1-->
-			<select id="style-container">
-				<option disabled selected>-- Select Sentence Style --</option>
-				<option value="surreal">Surrealism</option>
-				<option value="nature">Nature</option>
-			</select>
-			<!-- <div class="button-container">
-				<button id="generate-button">Generate</button>
-			</div> -->
+		<div class="desktop-layout">
+			<div class="left-side">
+				<h1>Inspiration Card</h1>
+				<!-- <h2>Out of ideas when creating artwork? Try me!</h2> -->
+			
+				<div class="all-buttons">
+					<!--function 1-->
+					<select id="style-container">
+						<option disabled selected>-- Select Sentence Style --</option>
+						<option value="surreal">Surrealism</option>
+						<option value="nature">Nature</option>
+					</select>
+					<!-- <div class="button-container">
+						<button id="generate-button">Generate</button>
+					</div> -->
 
-			<!--function 2-->
-			<select id="task-container">
-				<option disabled selected>-- Select Task Type --</option>
-				<option value="writing">Writing</option>
-				<option value="visual">Visual Thinking</option>
-				<option value="sensory">Sensory</option>
-				<option value="conceptual">Conceptual</option>
-			</select>
-			<!-- <div class="button-container">
-				<button id="generate-task-button">Generate</button>
-			</div> -->
+					<!--function 2-->
+					<select id="task-container">
+						<option disabled selected>-- Select Task Type --</option>
+						<option value="writing">Writing</option>
+						<option value="visual">Visual Thinking</option>
+						<option value="sensory">Sensory</option>
+						<option value="conceptual">Conceptual</option>
+					</select>
+					<!-- <div class="button-container">
+						<button id="generate-task-button">Generate</button>
+					</div> -->
 
-			<!--Integrate into 1 “generate” button after user testing-->
-			<div class="button-container">
-				<button id="generate-button">Generate</button>
+					<!--Integrate into 1 “generate” button after user testing-->
+					<div class="button-container">
+						<button id="generate-button">Generate</button>
+					</div>
+				</div>
 			</div>
+			<!-- <div id="task-output"></div> -->
 
-		</div>
-		
-		<!-- <div id="task-output"></div> -->
-
-		<!--Flip card-->
-		<div class="card" id="flip-card">
-			<div class="card-container">
-				<div class="card-front" id="output">Please generate a sentence first.</div>
-				<div class="card-back" id="task-output">Please generate a task first.</div>
+			<!--Flip card-->
+			<div class="card" id="flip-card">
+				<div class="card-container">
+					<div class="card-front" id="output">Please generate a sentence first.</div>
+					<div class="card-back" id="task-output">Please generate a task first.</div>
+				</div>
 			</div>
 		</div>
-
 
 		<footer>
 			© 2025, Yuting Zhuang
