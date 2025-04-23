@@ -58,8 +58,10 @@ footer{
 }
 
 select{
-	padding: 8px 40px 8px 40px;
-	margin: 8px;
+	padding: 0.7rem 3rem;
+	width: 20rem;
+	text-align: center;
+	/* margin: 8px; */
 	font-size: 16px;
 	background-color: rgba(50, 31, 26, 0.4);
 	color: white;
@@ -90,8 +92,8 @@ select:hover{
 }
 
 button{
-	padding: 8px 16px;
-	margin: 8px;
+	padding: 0.7rem 3rem;
+	width: 20rem;
 	font-size: 16px;
 	background-color: #422f21;
 	color: antiquewhite;
@@ -113,6 +115,7 @@ button:hover{
 	display: inline-block;
 
 	margin-top: 10px;
+	text-align: center;
 }
 
 .all-buttons{
