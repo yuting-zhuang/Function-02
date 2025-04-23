@@ -239,10 +239,11 @@ button:hover{
 	text-decoration: underline;
 	cursor: pointer;
 	transition: color 0.5s ease;
+	color: #ae8f76;
 }
 
 .a-link:hover{
-	color: #ae8f76;
+	color: #664d3b;
 }
 
 @media (min-width: 700px) {
