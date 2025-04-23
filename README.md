@@ -1,0 +1,5 @@
+This is my “Inspiration Card,” inspired by Oblique Strategies. When I work on conceptual or speculative projects, the ideation process often drives me crazy—it usually starts with abstract hypotheses and wild experimentation, then narrows down to a tangible outcome. That’s why I created this app: to help artists and creatives break out of fixed thinking patterns and approach their work from fresh, unexpected angles.
+
+There are just two simple steps. First, the app generates a random sentence based on the style you choose—either Nature or Surrealism. Each sentence is built from randomized combinations of < subjects, verbs, adjectives, and objects>. The background changes accordingly: Nature has a soft, warm tone, while Surrealism comes with cooler, more mysterious colors.
+Then second, you pick a task type—this can be just for reading or actually used for creation. Once you click “Generate,” a sentence and a creative task will appear on the card. You can keep pressing the button to get new combinations.
+The sentence is usually abstract and illogical, but the task is very specific. This helps artists approach their work from surprising, unconventional angles.
