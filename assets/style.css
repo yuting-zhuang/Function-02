@@ -40,6 +40,10 @@ h1{
 h2{
 	font-size: 1.2rem;
 	margin-bottom: 2.5rem;
+
+	font-family: "lorimer-no-2", sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
 
 h3{
@@ -57,7 +61,8 @@ select{
 	padding: 8px 40px 8px 16px;
 	margin: 8px;
 	font-size: 16px;
-	background-color: #ddd3c1;
+	background-color: rgba(50, 31, 26, 0.4);
+	color: white;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
@@ -66,10 +71,13 @@ select{
 	background-repeat: no-repeat;
 	background-position: right 12px center;
 	background-size: 14px;
+
+	backdrop-filter: blur(6px);
+
 }
 
 select:hover{
-	background-color: #e3dbcb;
+	background-color: rgba(93, 79, 75, 0.6);
 }
 
 button{
