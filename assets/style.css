@@ -231,6 +231,8 @@ button:hover{
 	font-family: "lorimer-no-2", sans-serif;
 	font-weight: 500;
 	padding: 0 2rem;
+
+
 }
 
 .a-link{
@@ -257,6 +259,12 @@ button:hover{
 		font-size: 1.5rem;
 	}
 
+	.intro{
+		height: 100vh;
+		font-size: 3rem;
+		font-weight: 500;
+		padding: 0 6rem;
+	}
 }
 
 @media (min-width: 1200px) {
@@ -306,9 +314,7 @@ button:hover{
 
 	.intro{
 		height: 100vh;
-
 		font-size: 3rem;
-
 		font-weight: 500;
 		padding: 0 15rem;
 	}
