@@ -115,6 +115,14 @@ button:hover{
 	margin-top: 10px;
 }
 
+.all-buttons{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 2.5rem;
+}
+
 /*added text box style*/
 /* #output,
 #task-output{
