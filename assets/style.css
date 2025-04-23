@@ -195,7 +195,7 @@ button:hover{
 	.desktop-layout{
 		display: flex;
 		justify-content: center;
-		align-items: flex-start;
+		align-items: center;
 		gap: 3rem;
 		margin-top: 4rem;
 		padding: 0 5rem;
