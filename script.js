@@ -125,4 +125,5 @@ document.getElementById("style-container").addEventListener("change", function()
 //flip on mobile (on tap)
 document.getElementById("flip-card").addEventListener("click", function() {
 	this.classList.toggle("is-flipped");
+
 })
