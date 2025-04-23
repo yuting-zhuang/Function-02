@@ -29,7 +29,6 @@ body{
 h1{
 	font-size: 2rem;
 	/* padding-bottom: 5rem; */
-
 	margin-bottom: 2rem;
 
 	font-family: "hwt-mardell", sans-serif;
@@ -192,6 +191,11 @@ button:hover{
 }
 
 @media (min-width: 1200px) {
+
+	h1{
+		font-size: 4rem;
+	}
+
 	.desktop-layout{
 		display: flex;
 		justify-content: center;
@@ -201,14 +205,7 @@ button:hover{
 
 		margin: 0 auto;
 		max-width: 1200px;
-		/* padding: 0 1rem; */
-	}
-
-	.left-side{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		flex: 1;
+		padding: 0 4rem;
 	}
 
 	.all-buttons{
